@@ -1,0 +1,65 @@
+html {
+    padding: 0;
+    margin: 0;
+    font-family: 'helvetica neue';
+    font-weight: 200;
+    font-size: 20px;
+}
+body {
+    background: #ffc600;
+    display: flex;
+    justify-content: center;
+    padding-top: 5%;
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+}
+
+.search {
+    text-align: center;
+    border: 10px solid #F7F7F7;
+    width: 30vw;
+    height: 5vw;
+    border-radius: 5px;
+    font-size: 40px;
+}
+.suggestions {
+    padding: 0;
+    margin: 0;
+}
+.suggestions li {
+    background: white;
+    list-style: none;
+    transition: background 0.2s;
+    border-bottom: 1px solid #D8D8D8;
+    margin-left: 10%;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 10%;
+    border-bottom: 1px solid #D8D8D8;
+    padding: 20px;
+    text-transform: capitalize;
+}
+li p {
+    display: inline;
+    margin: 0;
+}
+
+.suggestions li:nth-child(even) {
+    transform: perspective(100px) rotateX(3deg) translateY(2px) scale(1.001);
+    background: linear-gradient(to bottom,  #ffffff 0%,#EFEFEF 100%);
+}
+  
+.suggestions li:nth-child(odd) {
+    transform: perspective(100px) rotateX(-3deg) translateY(3px);
+    background: linear-gradient(to top,  #ffffff 0%,#EFEFEF 100%);
+}
+
+span.population {
+    font-size: 15px;
+}
+
+.hl {
+    background: #ffc600;
+}
+  
